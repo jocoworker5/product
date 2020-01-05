@@ -1,0 +1,226 @@
+
+
+<!DOCTYPE html>
+<html style="height:100%";>
+<head>
+<script src="https://kit.fontawesome.com/b0245c5cf2.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body{
+  background-color:#eee;
+  height:100%;
+}
+*{
+  border-size:box-sizing;
+ 
+}
+
+#header{
+  display:flex;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  
+}
+#Header-img{
+  flex:30%;
+  
+}
+#nav-bar{
+  background-color:rgba(0 ,0 ,0 ,0.01);
+  flex:70%;
+  display:flex;
+  justify-content:flex-end;
+ 
+}
+
+#a, #b, #c{
+  display:block;
+  background-color:#000;
+  text-decoration:none;
+  text-align:center;
+  padding:40px 5%;
+  border:1px solid white;
+  color:white;
+  width:25%;
+}
+section{
+  margin:auto;
+  margin-top:120px;
+}
+h1, #form{
+  text-align:center;
+  margin-top:10px;
+}
+article{
+  margin:auto;
+  width:70%;
+  
+}
+#articles{
+  display:flex;
+}
+#container{
+  margin:auto;
+  background-color:gray;
+}
+#ad{
+  margin-top:10px;
+  width:100%;
+  display:flex;
+  justify-content:space-evenly;
+}
+#sale{
+  border: 1px solid
+  #111;
+  width:30%;
+  height:auto;
+  text-align:center;
+  padding:20px 10px;
+}
+#price{
+  font-size:30px;
+  font-weight:1000;
+}
+footer{
+  background-color:#ccc;
+  text-align:right;
+}
+ul{
+  list-style-type:none;
+  display:flex;
+  justify-content:flex-end;
+}
+li{
+  padding:10px 10px;
+  margin-bottom:-30px;
+}
+li a{
+  text-decoration:none;
+  transition: 10s;
+}
+li a:hover{
+  color:yellow;
+}
+pre{
+  padding:10px 10px;
+}
+@media(max-width:500px){
+  #ad{
+    flex-direction:column;
+    align-items:center;
+  }
+  #sale{ 
+    width:80%;
+  }
+}
+#myvideo{
+  width:70%;
+  height:90%;
+  margin:auto;
+}
+#video{
+  width:100%;
+  height:100%;
+}
+
+</style>
+</head>
+<body>
+<header id="header">
+  <img id="header-img" src="https://previews.123rf.com/images/iriskana/iriskana1606/iriskana160600056/59920707-portugal-the-travel-destination-logo-vector-travel-company-logo-design-country-flag-travel-and-touri.jpg" alt="company logo" style="height:100px";>
+  <nav id="nav-bar">
+    <a href="#portion" class="nav-link" id="a">Features</a>
+    <a href="#sale" class="nav-link" id="b">How It Works</a>
+    <a href="#container" class="nav-link" id="c">Pricing</a>
+  </nav>  
+</header>
+<section>
+  <h1>Handcrafted, home-made masterpieces</h1>
+  <form id="form" action="https://www.freecodecamp.com/email-submit">
+  
+    <input type="email" name="email" id="email" placeholder="Enter your email address"><br>
+    <input type="submit" id="submit">
+  </form>
+</section>
+<article>
+  <div id="articles">
+    <i class="fas fa-address-book" style="font-size:39px;color:orange;padding:12px 10px;"></i>
+    <div id="portion">
+      <h2>Premium Materials</h2>
+      <p>Our trombones use the shiniest brass which is sourced locally. This will increase the longevity of your purchase.</p>
+    </div>
+  </div>
+  <div id="articles">
+    <i class="fas fa-air-freshener" style="font-size:45px;color:orange;padding:12px 10px;"></i>
+    <div id="portion">
+      <h2>Fast Shipping</h2>
+      <p>We make sure you recieve your trombone as soon as we have finished making it. We also provide free returns if you are not satisfied.</p>
+    </div>
+  </div>
+  <div id="articles">
+    <i class="fab fa-android" style="font-size:30px;color:orange;padding:20px 10px;"></i>
+    <div id="portion">
+      <h2>Quality Assurance</h2>
+      <p>For every purchase you make, we will ensure there are no damages or faults and we will check and test the pitch of your instrument.</p>
+    </div>
+  </div>  
+</article>
+<div id="container" style="width:70%;height:90%">
+  <iframe style="width:100%; height:100%"; src="https://www.youtube.com/embed/0wysCoAm2Yo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+<div id="myvideo">
+  <video id="video" controls>
+    <source src="movie.mp4" type="video/mp4">
+    <source src="movie1.ogg" type="video/ogg">
+  Your browser does not support the video tag.
+  </video>
+</div>
+<section id="ad">
+  <div id="sale">
+    <h2>TENOR TROMBONE</h2>
+    <p id="price">$600</p>
+    <p> 
+    Lorem ipsum.<br>
+    Lorem ipsum.<br>
+    Lorem ipsum dolor.
+    </p>
+    <button>select</button>
+  </div>
+  <div id="sale">
+    <h2>BASS TROMBONE</h2>
+    <p id="price">$900</p>
+    <p> 
+    Lorem ipsum.<br>
+    Lorem ipsum.<br>
+    Lorem ipsum dolor.
+    </p>
+    <button>select</button>
+  </div>
+  <div id="sale">
+    <h2>VALVE TROMBONE</h2>
+    <p id="price">$1200</p>
+    <p> 
+    Plays similar to a Trumpet<br>
+    Great for Jazz Bands<br>
+    Lorem ipsum dolor.
+    </p>
+    <button>select</button>
+  </div>
+</section>
+<footer>
+  <ul>
+    <li><a href="#">Privacy</a></li>
+    <li><a href="#">Terms</a></li>
+    <li><a href="#">Contact</a></li>
+  </ul>
+  <pre>Copyright2016, Original Trombones</pre>
+</footer>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>
+    
+    
